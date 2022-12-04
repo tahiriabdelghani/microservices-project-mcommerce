@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="config-server" />
+        <module name="client-ui" />
+        <module name="mproduits" />
+        <module name="gateway-server" />
+        <module name="mpaiement" />
+        <module name="clientui" />
+        <module name="springadmin" />
+        <module name="mcommandes" />
+        <module name="eureka-server" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="client-ui" target="11" />
+      <module name="clientui" target="1.8" />
+      <module name="clientui (1)" target="1.8" />
+      <module name="clientui (2)" target="1.8" />
+      <module name="config-server" target="11" />
+      <module name="eureka-server" target="11" />
+      <module name="eureka-server (1)" target="1.8" />
+      <module name="gateway-server" target="11" />
+      <module name="mcommandes" target="1.8" />
+      <module name="mpaiement" target="1.8" />
+      <module name="mproduits" target="1.8" />
+      <module name="springadmin" target="1.8" />
+      <module name="zuul-server" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="client-ui" options="-parameters" />
+      <module name="clientui" options="-parameters" />
+      <module name="clientui (1)" options="-parameters" />
+      <module name="config-server" options="-parameters" />
+      <module name="eureka-server" options="-parameters" />
+      <module name="eureka-server (1)" options="-parameters" />
+      <module name="gateway-server" options="-parameters" />
+      <module name="mcommandes" options="-parameters" />
+      <module name="mpaiement" options="-parameters" />
+      <module name="mproduits" options="-parameters" />
+      <module name="springadmin" options="-parameters" />
+      <module name="zuul-server" options="-parameters" />
+    </option>
+  </component>
+</project>

@@ -1,0 +1,36 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: clientui-service-app
+  labels:
+    app: clientui-service-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app : clientui-service-app
+  template:
+    metadata:
+      labels:
+        app: clientui-service-app
+    spec:
+      containers:
+      - name: clientui-service-app
+        image: abdelghxni/clientui:0.0.1
+        imagePullPolicy: Always
+        ports:
+          - containerPort: 8080
+
+---
+
+
+apiVersion: v1
+kind: Service
+metadata:
+  name:  clientui-service-svc
+spec:
+  selector:
+    app:  clientui-service-app
+  ports:
+    - port:  80
+      targetPort:  8080
